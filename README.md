@@ -19,8 +19,48 @@ Ultrasonic
 ## شرح مختصر :
 #### در مدار LED قرار گرفته است که در هنگام نزدیک شدن مانعی به اولتراسونیک روشن می شود و نزدیک شدن این مانع با شدت روشنایی LED اندازه گرفته می شود.
 #### به طوریکه وقتی مانع نزدیک می شود شدت روشنایی به حداکثر می رسد و وقتی مانع دور می شود شدت روشنایی به حداقل می رسد(خاموش می شود)
+#### چیزی مشابه سنسور دنده عقب خودرو که به نوعی هشدار است وقتی مانی به خودرو نزدیک شود.
 #### در بازه (4-30)سانتی متر
 ---
-At the command prompt,Arduino `nano`.
+### کد برنامه : 
+ `int tring = 9;
+int echo = 10;
+int duration;
+int dist;
+int led = 11, value;
+
+void setup() {
+  Serial.begin(9600);
+  pinMode(tring, OUTPUT);
+  pinMode(echo, INPUT);
+  pinMode(led, OUTPUT);
+
+}
+
+void loop() {
+  digitalWrite(tring, LOW);
+  delayMicroseconds(2);
+  digitalWrite(tring, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(tring, LOW);
+  duration = pulseIn(echo, HIGH);
+  dist = (duration / 2) * 0.0343;
+  Serial.println(dist);
+  int MAP =  map(dist, 30, 4, 0, 255);
+  if (dist <= 30)
+  {
+    analogWrite(led, MAP);
+  }
+  else {
+    analogWrite(led, LOW);
+  }
+
+
+  delay(500);
+
+}`
+---
+## عملکرد مدار :
+![](/gifsensor.gif)
 ## شکل شماتیک مدار
-![](/Mediia/imgfade.jpg)
+![](/schema.jpg)
