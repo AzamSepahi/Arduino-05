@@ -26,7 +26,7 @@ Ultrasonic
 ### کد برنامه : 
 ---
 
-`Cpp int tring = 9;
+```cpp int tring = 9;
 int echo = 10;
 int duration;
 int dist;
