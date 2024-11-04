@@ -24,19 +24,22 @@ Ultrasonic
 #### در بازه (4-30)سانتی متر
 ---
 ### کد برنامه : 
--
+---
+
 `int tring = 9;
 int echo = 10;
 int duration;
 int dist;
-int led = 11, value;
-void setup() {
+int led = 11, value;`.
+
+`setup() {
   Serial.begin(9600);
   pinMode(tring, OUTPUT);
   pinMode(echo, INPUT);
   pinMode(led, OUTPUT);
-}
-void loop() {
+}`.
+
+`void loop() {
   digitalWrite(tring, LOW);
   delayMicroseconds(2);
   digitalWrite(tring, HIGH);
@@ -54,12 +57,9 @@ void loop() {
     analogWrite(led, LOW);
   }
   delay(500);
-}
-`.
+}`.
+
 ---
-`int=0
-     int =0
-`.
 
 ## عملکرد مدار :
 ![](/gifsensor.gif)
