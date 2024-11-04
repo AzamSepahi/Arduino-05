@@ -26,7 +26,7 @@ Ultrasonic
 ### کد برنامه : 
 ---
 
-`cpp int tring = 9;
+```cpp int tring = 9;
 int echo = 10;
 int duration;
 int dist;
@@ -55,7 +55,11 @@ void loop() {
     analogWrite(led, LOW);
   }
   delay(500);
-}`
+}```
+
+
+
+---
 
 
 ## عملکرد مدار :
