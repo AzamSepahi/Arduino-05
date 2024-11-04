@@ -24,7 +24,7 @@ Ultrasonic
 #### در بازه (4-30)سانتی متر
 ---
 ### کد برنامه : 
-At the command prompt, type Arduino `int tring = 9;
+At the command prompt,Arduino `int tring = 9;
 int echo = 10;
 int duration;
 int dist;
