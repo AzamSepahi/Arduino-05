@@ -61,6 +61,7 @@ void loop() {
 }
 `
 ---
+At the command prompt, type ` int=0`
 ## عملکرد مدار :
 ![](/gifsensor.gif)
 ## تصویر مدار:
