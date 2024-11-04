@@ -24,7 +24,7 @@ Ultrasonic
 #### در بازه (4-30)سانتی متر
 ---
 ### کد برنامه : 
-At the command prompt,Arduino `int tring = 9;
+`int tring = 9;
 int echo = 10;
 int duration;
 int dist;
@@ -55,12 +55,12 @@ void loop() {
   else {
     analogWrite(led, LOW);
   }
-
-
   delay(500);
-
 }`.
 ---
+`int=0
+int =0
+`.
 
 ## عملکرد مدار :
 ![](/gifsensor.gif)
