@@ -24,20 +24,18 @@ Ultrasonic
 #### در بازه (4-30)سانتی متر
 ---
 ### کد برنامه : 
+-
 `int tring = 9;
 int echo = 10;
 int duration;
 int dist;
 int led = 11, value;
-
 void setup() {
   Serial.begin(9600);
   pinMode(tring, OUTPUT);
   pinMode(echo, INPUT);
   pinMode(led, OUTPUT);
-
 }
-
 void loop() {
   digitalWrite(tring, LOW);
   delayMicroseconds(2);
@@ -56,10 +54,11 @@ void loop() {
     analogWrite(led, LOW);
   }
   delay(500);
-}`.
+}
+`.
 ---
 `int=0
-int =0
+     int =0
 `.
 
 ## عملکرد مدار :
