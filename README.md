@@ -26,20 +26,18 @@ Ultrasonic
 ### کد برنامه : 
 ---
 
-c++```int tring = 9;
+C++```int tring = 9;
 int echo = 10;
 int duration;
 int dist;
-int led = 11, value;`.
-
-`setup() {
+int led = 11, value;
+setup() {
   Serial.begin(9600);
   pinMode(tring, OUTPUT);
   pinMode(echo, INPUT);
   pinMode(led, OUTPUT);
-}```.
-
-`void loop() {
+}
+void loop() {
   digitalWrite(tring, LOW);
   delayMicroseconds(2);
   digitalWrite(tring, HIGH);
@@ -57,7 +55,7 @@ int led = 11, value;`.
     analogWrite(led, LOW);
   }
   delay(500);
-}`.
+}```.
 
 ---
 
