@@ -26,7 +26,7 @@ Ultrasonic
 ### کد برنامه : 
 ---
 
-`int tring = 9;
+c++```int tring = 9;
 int echo = 10;
 int duration;
 int dist;
@@ -37,7 +37,7 @@ int led = 11, value;`.
   pinMode(tring, OUTPUT);
   pinMode(echo, INPUT);
   pinMode(led, OUTPUT);
-}`.
+}```.
 
 `void loop() {
   digitalWrite(tring, LOW);
