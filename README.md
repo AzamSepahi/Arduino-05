@@ -55,13 +55,13 @@ void loop() {
     analogWrite(led, LOW);
   }
   delay(500);
-}```.
-
+}`.
 ---
+
 
 ## عملکرد مدار :
 ![](/gifsensor.gif)
 ## تصویر مدار:
 ![](/photo.jpg)
-## شکل شماتیک مدار
+## شکل شماتیک مدار:
 ![](/schema.jpg)
